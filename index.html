@@ -65,6 +65,18 @@
                 white-space: nowrap;
                 transform: translate(-50%, -50%);
             }
+            footer {
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 11px;
+                color: #555;
+                letter-spacing: 0.5px;
+                white-space: nowrap;
+                pointer-events: none;
+                z-index: 20;
+            }
         </style>
     </head>
     <body>
@@ -74,6 +86,9 @@
             <button class="btn-decrypt" onclick="startDecrypt()">DECRYPT MESSAGE</button>
         </div>
         <div id="heart-container"></div>
+        <footer>
+            © 2026 Insta: @santozx_._7 • Desenvolvido com HTML, CSS & JS
+        </footer>
         <script>
             function startDecrypt() {
                 document.getElementById('main-ui').style.display = 'none';
